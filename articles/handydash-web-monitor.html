@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" style="transform: none;"><head>
+    <title>HandyDash - Web Monitor</title>		
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />    
+	<meta name="author" content="Nathan Handy" />    
+	<meta name="description" content="Nathan Handy is blogging about software engineering, solution architecture, and web development.">
+    <link rel="icon" type="image/png" href="../images/favicon.ico">   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@_H4NDY">
+	<meta name="twitter:creator" content="@_H4NDY">
+	<meta name="twitter:title" content="HandyDash - Web Monitor">
+	<meta name="twitter:description" content="Nathan Handy is blogging about software engineering, solution architecture, and web development.">
+	<meta name="twitter:image" content="https://www.nathanhandy.blog/images/blog/articles-post2-handydash-web-monitor.jpg">    
+	<meta property="og:title" content="HandyDash - Web Monitor">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://www.nathanhandy.blog/articles.html">	
+	<meta property="og:description" content="Nathan Handy is blogging about software engineering, solution architecture, and web development.">
+	<meta property="og:image" content="https://www.nathanhandy.blog/images/blog/articles-post2-handydash-web-monitor.jpg">
+	
+    <!-- Stylesheets & Fonts -->
+    <link href="../css/plugins.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+	<style id="theia-sticky-sidebar-stylesheet-TSS">.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style>	
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LHH4D0CVEB"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-LHH4D0CVEB');
+	</script>
+</head>
+<body class="b--desktop breakpoint-lg" style="transform: none;">
+    <!-- Body Inner -->
+    <div class="body-inner" style="transform: none;">
+        <!-- Header -->
+        <header id="header" data-fullwidth="true" class="">
+            <div class="header-inner">
+                <div class="container">
+                    <!--Logo-->
+                    <div id="logo">
+                        <a href="/">
+                            <span class="logo-default">NH</span>
+                            <span class="logo-dark">NH</span>
+                        </a>
+                    </div>
+                    <!--End: Logo-->
+                    <!--Navigation Resposnive Trigger-->
+                    <div id="mainMenu-trigger">
+                        <a class="lines-button x"><span class="lines"></span></a>
+                    </div>
+                    <!--end: Navigation Resposnive Trigger-->
+                    <!--Navigation-->
+                    <div id="mainMenu">
+                        <div class="container">
+                            <nav>
+                                <ul>
+                                    <li><a href="/">Home</a></li>
+									<li><a href="/articles">Articles</a></li>
+									<li><a href="/about">About</a></li>                                               
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!--end: Navigation-->
+                </div>
+            </div>
+        </header>
+        <!-- end: Header -->
+        
+        
+        
+        <!-- Page Content -->
+        <section id="page-content" style="transform: none;">
+            <div class="container" style="transform: none;">
+                <div class="row" style="transform: none;">
+                    <!-- content -->
+                    <div class="content col-lg-9">
+                        <!-- Blog -->
+                        <div id="blog" class="single-post">
+                            <!-- Post single item-->
+                            <div class="post-item">
+                                <div class="post-item-wrap">
+
+									<!-- Image Start -->
+									<div class="post-image">
+										<a href="../images/blog/articles-post2-handydash-original.png" target="_blank">
+											<img alt="OSI Model Technology Disciplines" src="../images/blog/articles-post2-handydash-original-small.png" style="width:100%; border: solid 1px #80808047;">
+										</a>
+									</div>
+										
+									<!-- Image Finish -->
+                                    <div class="post-item-description">
+                                        <h2 id="AboutArticle">HandyDash - Web Monitor</h2>
+                                        <div class="post-meta">
+                                            <span class="post-meta-date"><i class="fa fa-calendar"></i>June 28, 2024</span>
+											<span class="post-meta-category"><i class="fa fa-tag"></i>Web Monitoring, Telemetry</span>
+											<span class="post-meta-date"><i class="fa fa-clock"></i>5 Minute Read</span>
+                                            <div class="post-meta-share">
+                                                <a class="btn btn-xs btn-slide btn-twitter" href="https://twitter.com/" target="_blank" data-width="100">
+                                                    <i class="fab fa-twitter"></i>
+                                                    <span>Twitter</span>
+                                                </a>
+                                                <a class="btn btn-xs btn-slide btn-googleplus" href="mailto:#" data-width="80">
+                                                    <i class="icon-mail"></i>
+                                                    <span>Mail</span>
+                                                </a>
+                                            </div>
+                                        </div>
+										<h3>About this article</h3>
+                                        <p id="WhyHandyDash">In this article I discuss <a href="https://github.com/Nathan-Handy/HandyDash" target="_blank">HandyDash</a>, a tool that I’ve created for application and systems monitoring. I share my reasons for developing the tool, and discuss various facets of operational monitoring.</p>
+										<p>HandyDash v1 is free, cross platform, and available for download via <a href="https://github.com/Nathan-Handy/HandyDash" target="_blank">GitHub</a>.</p>							
+										
+										<h3>Why HandyDash?</h3>
+                                        <p>As a software engineer I'm naturally interested in the health, performance, and security of my applications. I'm also cognizant of the third party services and APIs underpinning platforms that I build, and how these can affect platform reliability. Traditionally these concerns are left to an operations team to monitor and act upon, and more recently, site reliability engineers.</p>
+										<p>Application and systems monitoring is essential for any technology team. It expedites the identification of issues, enabling remediation steps to be initiated sooner. Finding the right tooling, and implementing an appropriate level of monitoring, can however be challenging. For example:</p>
+										<ul>
+											<li>Several monitoring tools can be complex to configure and operate. </li>
+											<li>Few tools correlate failures across interconnected systems and system layers.</li>
+											<li>Few tools enable the visual mapping of the architectures that they monitor.</li>
+											<li>Knowing what to monitor, and to what extent, often requires a heuristic approach.</li>
+										</ul>										
+										
+										<p>While the advent of cloud hosting may alleviate some monitoring concerns, any systems hosted outside the cloud, or hosted with a different vendor, may fall outside the scope of a single cloud monitoring solution. Aggregated monitoring across Azure and AWS can be achieved through tools like Amazon CloudWatch, however there is moderate technical overhead to achieve this. Cloud monitoring tools are also heavily geared towards metric presentation, with limited illustration of application and system relationships, and upstream/downstream failures.</p>
+										<p id="Features">There is no doubt that advanced telemetry can offer valuable insights into system performance, security, and stability. But in its most basic form, application and systems monitoring can be achieved by observing a handful of key metrics. Presenting these metrics in a concise and intuitive fashion, allows teams to quickly discern platform health, without requiring the interpretation of multiple disparate charts.</p>
+
+										<h3>Features</h3>
+										<p>Given the considerations discussed above, I set about developing HandyDash with some specific features in mind. I wanted a monitoring tool that:</p>
+										<div class="blockquote">
+										<small>
+										<ul>
+											<li>Doesn't require the installation of agents on target systems.</li>
+											<li>Is simple to configure, without requiring programming or scripting knowledge.</li>
+											<li>Can visually represent the platforms that my team is monitoring.</li>
+											<li>Distinguishes the criticality of different events.</li>
+											<li>Distinguishes between application failures and lower level connectivity failures.</li>
+											<li>Articulates failures in a way that is actionable for my operations team.</li>
+											<li>Links the systems underpinning composite platforms, and propagates failures to upstream nodes.</li>
+										</ul>
+										</small>
+										</div>										
+										<p>Given that it’s a stand alone executable, HandyDash provides a convenient external viewpoint for the observation of applications and systems. As an independent source of telemetry, it can be used to reconcile the state of cloud hosted platforms, and help identify grey failures. </p>
+										<p id="HowIs">Another feature of HandyDash is that it targets the application layer through HTTP checks, but automatically falls back to transport and network layer checks, when each higher level check fails. This means that the tool is able to differentiate between failures that are application related or hosting and system related. This multilayered approach to monitoring enables greater context within error messages, and shortens the time spent assessing the relevance of particular failures.</p>
+										<p>The most evident feature of HandyDash however, is the tree based UI. Linking individual monitors within a tree structure, enables repeated warnings and failures to be propagated to parent and ancestor nodes. This is particularly useful for platforms with many endpoints, where lower leaf monitor nodes may be minimized and hidden from view. </p>
+										<p id="Suitability">Further features are discussed on <a href="https://github.com/Nathan-Handy/HandyDash" target="_blank">GitHub</a>, such as certificate chain validation, and response validation. </p>
+										
+										<h3>Suitability</h3>
+                                        <p>One question technology teams may have, is how would HandyDash fit into our current monitoring practices? This is certainly an important consideration for larger technology teams that may already utilise enterprise level products.</p>
+										<p>For smaller organisations with zero to little active monitoring, HandyDash is an ideal starting point for web based monitoring. For medium and large organisations already utilising monitoring solutions, HandyDash can compliment existing products and bespoke tooling. </p>
+										<p id="Limitations">Regardless of organisation size, HandyDash has been designed for ease of use, and high visibility. The UI has been built with wall mounted screens in mind, but is equally as convenient on individual workstations.</p>
+										
+										<h3>Limitations</h3>
+										<p>Given that it’s a nascent product, it’s worth noting the current limitations of HandyDash. For instance, notifications are not yet available for monitor failures. 
+										</p>
+										<p>Also, while the UI for HandyDash is browser based, and could be made available via a local network URL, it is not currently built with parallel use in mind. Therefore if one user collapses or expands particular tree nodes, this will be visible to other users within their personal browsers, after the next UI refresh (along with other configuration changes). </p>										
+                                        <p id="LookingAhead">Other monitoring tools that are agent based will typically expose metrics such as CPU and memory utilisation, via the Simple Network Management Protocol (SNMP) or other proprietary APIs. As HandyDash is agent free, all metrics are obtained through the polling of accessible endpoints and interfaces. This means that internal metrics pertaining to the system resources on target hosts, are not available via HandyDash.</p>													
+
+										<h3>Looking Ahead</h3>
+                                        <p>HandyDash is currently a personal project, however I do plan on adding further features as time permits. Please feel free to get in touch via  <a href="mailto:nathanhandyblog@gmail.com" target="_blank">email</a>, or via <a href="https://github.com/Nathan-Handy/HandyDash" target="_blank">GitHub</a> regarding feature requests and / or bugs. Thanks.</p>
+                                    </div>
+                                    <div class="post-navigation">
+                                        <!-- <a href="#" class="post-prev"> -->
+                                            <!-- <div class="post-prev-title"><span>Previous Post</span>None</div> -->
+                                        <!-- </a> -->
+                                        <a href="/articles" class="post-all">
+                                            <i class="icon-grid"> </i>
+                                        </a>
+                                        <!-- <a href="#" class="post-next"> -->
+                                            <!-- <div class="post-next-title"><span>Next Post</span>None</div> -->
+                                        <!-- </a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end: Post single item-->
+                        </div>
+                    </div>
+                    <!-- end: content -->
+                    <!-- Sidebar-->
+                    <div class="sidebar sticky-sidebar col-lg-3" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+						<div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: fixed; transform: translateY(120px); width: 245px; left: 840px; top: 0px;"><div class="widget  widget-newsletter">
+							<div class="widget clearfix widget-categories" style="position: static; transform: none; left: 783px; top: 0px;">
+								<h4 class="widget-title">In this article</h4>
+								<ul class="list list-arrow-icons">
+									<li> <a href="#AboutArticle">About this article </a> </li>
+									<li> <a href="#WhyHandyDash">Why HandyDash? </a> </li>
+									<li> <a href="#Features">Features </a> </li>
+									<li> <a href="#Suitability">Suitability </a> </li>
+									<li> <a href="#Limitations">Limitations</a> </li>
+									<li> <a href="#LookingAhead">Looking Ahead </a> </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+                    <!-- end: sidebar-->
+                </div>
+            </div>
+        </section>
+        <!-- end: Page Content -->
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="copyright-content">
+                <div class="container">
+                    <div class="copyright-text text-center">© 2024 Nathan Handy. All Rights Reserved. </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end: Footer -->
+    </div>
+    <!-- end: Body Inner -->
+    <!-- Scroll top -->
+    <a id="scrollTop" style="bottom: 16px; opacity: 0; z-index: 199;"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+    <!--Plugins-->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/plugins.js"></script>
+    <!--Template functions-->
+    <script src="../js/functions.js"></script>
+
+
+</body></html>
